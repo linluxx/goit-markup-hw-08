@@ -80,16 +80,25 @@
 }
 
 .modal-form__checkbox-label {
-  font-size: 14px;
-  line-height: 1.71;
+  // font-size: 14px;
+  // line-height: 1.71;
   letter-spacing: 0.03em;
   color: $main-text;
   display: flex;
   align-items: center;
   justify-content: center;
+  ///mobile
+  font-size: 12px;
+  line-height: 1.17;
 }
 
-.modal-form__checkbox-label span {
+.modal-form__condition {
+  margin-left: 4px;
+  text-decoration: underline;
+  color: $accent;
+}
+
+.modal-form__checkbox-custom {
   width: 16px;
   height: 15px;
   border: 2px solid $title;

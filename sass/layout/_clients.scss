@@ -1,14 +1,14 @@
 .clients {
   display: flex;
   flex-wrap: wrap;
-  margin: -30px;
+  margin: -15px;
   // justify-content: center;
 }
 
 .clients__item {
-  width: calc((100% - 2 * 60px) / 2);
-  margin: 30px;
-  // max-width: 210px;
+  width: calc((100% - 2 * 30px) / 2);
+  margin: 15px;
+  max-width: 210px;
   height: 92px;
 
   // width: 170px;
