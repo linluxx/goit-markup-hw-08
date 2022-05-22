@@ -1,0 +1,41 @@
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border-color: transparent;
+  padding: 0;
+}
+
+.social__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social__button--team {
+  background-color: $social-btn-bg-frst;
+  fill: $social-btn-fill-frst;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $active-btn-bg;
+    fill: $active-btn-text;
+  }
+}
+
+.social__button--join {
+  background-color: $social-btn-bg-scnd;
+  fill: $social-btn-fill-scnd;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $active-btn-bg;
+  }
+}

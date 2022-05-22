@@ -1,0 +1,133 @@
+.modal__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title;
+  margin-bottom: 12px;
+}
+
+.modal-form__field {
+  margin-bottom: 10px;
+}
+
+.modal-form__input-wrap {
+  position: relative;
+}
+.modal-form__input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    border-color: $accent;
+  }
+}
+
+.modal-form__label {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: $main-text;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.modal-form__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .modal-form__input:focus + & {
+    fill: $accent;
+  }
+}
+
+.modal-form__textarea {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.modal-form__comments {
+  height: 120px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  padding: 12px 16px;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+
+    &:focus {
+      border-color: $accent;
+    }
+  }
+}
+
+.modal-form__checkbox-wrap {
+  margin-bottom: 30px;
+}
+
+.modal-form__checkbox-label {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $main-text;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-form__checkbox-label span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid $title;
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form__checkbox-input:checked + .modal-form__checkbox-label .modal-form__checkbox-custom {
+  background-color: $accent;
+  border: none;
+}
+
+.modal-form__checkbox-input:checked + .modal-form__checkbox-label .modal-form__checkbox-icon {
+  fill: $social-btn-fill-scnd;
+}
+
+.modal-form__checkbox-icon {
+  fill: transparent;
+}
+.modal-form__send-btn {
+  width: 200px;
+  height: 50px;
+  background: $active-btn-bg;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+  color: $active-btn-text;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:hover,
+  &:focus {
+    background-color: $scnd-active-btn-bg;
+  }
+}
