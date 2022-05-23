@@ -80,20 +80,22 @@
 }
 
 .modal-form__checkbox-label {
-  // font-size: 14px;
-  // line-height: 1.71;
   letter-spacing: 0.03em;
   color: $main-text;
   display: flex;
   align-items: center;
   justify-content: center;
-  ///mobile
   font-size: 12px;
   line-height: 1.17;
+  ////////////////////////////// PC //////////////////////////////
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form__condition {
-  margin-left: 4px;
+  margin-left: 3px;
   text-decoration: underline;
   color: $accent;
 }

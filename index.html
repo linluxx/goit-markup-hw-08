@@ -26,7 +26,12 @@
         <a class="logo logo__header" href="./index.html"
           >Web<span class="logo__dark">Studio</span>
         </a>
-        <button type="button" class="mob-menu__open-btn">
+        <button
+          type="button"
+          class="mob-menu__open-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg class="mob-menu__open-icon" width="40px" height="40px">
             <use href="./images/sprite.svg#icon-mob-menu"></use>
           </svg>
@@ -47,7 +52,7 @@
         <ul class="contacts">
           <li class="contacts__item">
             <a href="mailto:info@devstudio.com" class="contacts__link">
-              <svg class="contacts__icon" width="16px" height="12px">
+              <svg class="contacts__icon-mail">
                 <use href="./images/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
@@ -55,7 +60,7 @@
           </li>
           <li class="contacts__item">
             <a href="tel:+380961111111" class="contacts__link"
-              ><svg class="contacts__icon" width="10px" height="16px">
+              ><svg class="contacts__icon-tel">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -63,10 +68,10 @@
           </li>
         </ul>
 
-        <div class="mob-menu is-hidden">
+        <div class="mob-menu js-menu-container" id="mobile_menu">
           <div class="mob-menu__wrap">
             <div class="mob-menu__nav-wrap">
-              <button type="button" class="mob-menu__close-btn">
+              <button type="button" class="mob-menu__close-btn js-close-menu">
                 <svg class="mob-menu__open-icon" width="40px" height="40px">
                   <use href="./images/sprite.svg#icon-mob-menu-close"></use>
                 </svg>
@@ -546,7 +551,7 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

@@ -1,12 +1,20 @@
 .footer__join {
-  margin-bottom: 60px;
-  // margin-right: 93px;
+  ////////////////////////////// MOBILE & TABLET //////////////////////////////
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+
+  ////////////////////////////// PC //////////////////////////////
+  @media screen and (min-width: 1200px) {
+    display: block;
+    margin-right: 93px;
+  }
 }
 
 .join__title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $scnd-title;

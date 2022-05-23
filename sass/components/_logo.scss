@@ -6,9 +6,13 @@
   letter-spacing: 0.03em;
   color: $accent;
 
-  // font-size: 26px;
-  // line-height: 1.19;
+  ////////////////////////////// PC //////////////////////////////
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
+
 .logo__light {
   color: $light-logo;
 }

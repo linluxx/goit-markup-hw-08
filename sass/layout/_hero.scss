@@ -10,9 +10,13 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  // padding-top: 200px;
-  // padding-bottom: 200px;
-  // max-width: 1600px;
+
+  ////////////////////////////// PC //////////////////////////////
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+  }
 }
 
 .hero__title {
@@ -24,12 +28,16 @@
   text-transform: uppercase;
   color: $scnd-title;
   margin-bottom: 30px;
-  // font-weight: 900;
-  // font-size: 44px;
-  // line-height: 1.36;
-  // text-align: center;
-  // letter-spacing: 0.06em;
-  // text-transform: uppercase;
+
+  ////////////////////////////// PC //////////////////////////////
+  @media screen and (min-width: 1200px) {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
 }
 .hero__btn {
   align-items: center;
