@@ -9,6 +9,7 @@
   max-width: 450px;
   margin-left: auto;
   margin-right: auto;
+  overflow-y: auto;
 
   .backdrop.is-hidden & {
     transform: scale(1.3);
