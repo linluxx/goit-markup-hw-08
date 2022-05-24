@@ -1,4 +1,5 @@
 .portfolio-cards {
+  ////////////////////////////// TABLET & PC //////////////////////////////
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -23,11 +24,13 @@
 .portfolio-cards__item {
   margin-bottom: 30px;
 
+  ////////////////////////////// TABLET //////////////////////////////
   @media screen and (min-width: 768px) {
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
 
+  ////////////////////////////// PC //////////////////////////////
   @media screen and (min-width: 1200px) {
     width: calc((100% - 3 * 30px) / 3);
   }
@@ -42,6 +45,8 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
+
+  ////////////////////////////// TABLET //////////////////////////////
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -74,7 +79,7 @@
   .portfolio-cards__link:focus & {
     transform: translateY(-100%);
   }
-
+  ////////////////////////////// MOBILE //////////////////////////////
   @media screen and (max-width: 767px) {
     font-size: 4vmin;
   }
@@ -83,6 +88,8 @@
 .portfolio-cards__text {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
+
+  ////////////////////////////// TABLET //////////////////////////////
   @media screen and (min-width: 768px) {
     flex-grow: 1;
   }

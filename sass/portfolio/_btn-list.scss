@@ -3,12 +3,14 @@
   flex-wrap: wrap;
   margin-bottom: 25px;
 
+  ////////////////////////////// TABLET //////////////////////////////
   @media screen and (min-width: 768px) {
     justify-content: center;
     margin-bottom: 30px;
     flex-wrap: nowrap;
   }
 
+  ////////////////////////////// PC //////////////////////////////
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
   }
@@ -37,6 +39,7 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 
+  ////////////////////////////// MOBILE //////////////////////////////
   @media screen and (max-width: 767px) {
     margin-bottom: 15px;
   }
