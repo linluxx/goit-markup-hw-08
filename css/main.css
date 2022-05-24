@@ -528,6 +528,12 @@ ul {
   color: #2196f3;
 }
 
+@media screen and (max-width: 480px) {
+  .mob-contacts__link-tel {
+    font-size: calc((100vw - 320px) / (480 - 320) * (34 - 27) + 27px);
+  }
+}
+
 .mob-contacts__link-mail {
   font-weight: 500;
   font-size: 24px;
@@ -539,6 +545,12 @@ ul {
 
 .mob-contacts__link-mail:hover, .mob-contacts__link-mail:focus {
   color: #2196f3;
+}
+
+@media screen and (max-width: 480px) {
+  .mob-contacts__link-mail {
+    font-size: calc((100vw - 320px) / (480 - 320) * (24 - 20) + 20px);
+  }
 }
 
 .mob-menu__social {
@@ -557,7 +569,13 @@ ul {
 
 .mob-menu__social-link {
   color: #2196f3;
-  font-size: 4vmin;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 480px) {
+  .mob-menu__social-link {
+    font-size: calc((100vw - 320px) / (480 - 320) * (18 - 12) + 12px);
+  }
 }
 
 .header {
@@ -1396,9 +1414,10 @@ ul {
   transform: translateY(-100%);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 440px) {
   .portfolio-cards__description {
     font-size: 4vmin;
+    padding: 50px 24px;
   }
 }
 

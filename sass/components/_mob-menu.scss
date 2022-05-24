@@ -97,6 +97,10 @@
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: $accent;
+
+  @media screen and (max-width: 480px) {
+    font-size: calc((100vw - 320px) / (480 - 320) * (34 - 27) + 27px);
+  }
 }
 
 .mob-contacts__link-mail {
@@ -109,6 +113,10 @@
   &:hover,
   &:focus {
     color: $accent;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: calc((100vw - 320px) / (480 - 320) * (24 - 20) + 20px);
   }
 }
 
@@ -129,5 +137,9 @@
 
 .mob-menu__social-link {
   color: $accent;
-  font-size: 4vmin;
+  font-size: 18px;
+
+  @media screen and (max-width: 480px) {
+    font-size: calc((100vw - 320px) / (480 - 320) * (18 - 12) + 12px);
+  }
 }

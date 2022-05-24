@@ -79,9 +79,11 @@
   .portfolio-cards__link:focus & {
     transform: translateY(-100%);
   }
+
   ////////////////////////////// MOBILE //////////////////////////////
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 440px) {
     font-size: 4vmin;
+    padding: 50px 24px;
   }
 }
 
