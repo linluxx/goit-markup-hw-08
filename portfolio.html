@@ -26,12 +26,7 @@
         <a class="logo logo__header" href="./index.html"
           >Web<span class="logo__dark">Studio</span>
         </a>
-        <button
-          type="button"
-          class="mob-menu__open-btn js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
+        <button type="button" class="mob-menu__open-btn js-open-menu" aria-expanded="false">
           <svg class="mob-menu__open-icon" width="40px" height="40px">
             <use href="./images/sprite.svg#icon-mob-menu"></use>
           </svg>
@@ -70,52 +65,48 @@
           </li>
         </ul>
 
-        <div class="mob-menu js-menu-container" id="mobile_menu">
-          <div class="mob-menu__wrap">
-            <div class="mob-menu__nav-wrap">
-              <button type="button" class="mob-menu__close-btn js-close-menu">
-                <svg class="mob-menu__open-icon" width="40px" height="40px">
-                  <use href="./images/sprite.svg#icon-mob-menu-close"></use>
-                </svg>
-              </button>
-              <ul class="mob-menu__list">
-                <li class="mob-menu__item">
-                  <a href="./index.html" class="mob-menu__link">Студия</a>
-                </li>
-                <li class="mob-menu__item">
-                  <a href="./portfolio.html" class="mob-menu__link">Портфолио</a>
-                </li>
-                <li class="mob-menu__item">
-                  <a href="" class="mob-menu__link">Контакты</a>
-                </li>
-              </ul>
-            </div>
-            <div class="mob-menu__contacts-wrap">
-              <ul class="mob-contacts">
-                <li class="mob-contacts__item">
-                  <a href="tel:+380961111111" class="mob-contacts__link-tel">+38 096 111 11 11 </a>
-                </li>
-                <li class="mob-contacts__item">
-                  <a href="mailto:info@devstudio.com" class="mob-contacts__link-mail"
-                    >info@devstudio.com
-                  </a>
-                </li>
-              </ul>
-              <ul class="mob-menu__social">
-                <li class="mob-menu__social-item">
-                  <a class="mob-menu__social-link" href="">Instagram</a>
-                </li>
-                <li class="mob-menu__social-item">
-                  <a class="mob-menu__social-link" href="">Twitter</a>
-                </li>
-                <li class="mob-menu__social-item">
-                  <a class="mob-menu__social-link" href="">Facebook</a>
-                </li>
-                <li class="mob-menu__social-item">
-                  <a class="mob-menu__social-link" href="">LinkedIn</a>
-                </li>
-              </ul>
-            </div>
+        <div class="mob-menu js-menu-container">
+          <button type="button" class="mob-menu__close-btn js-close-menu">
+            <svg class="mob-menu__open-icon" width="40px" height="40px">
+              <use href="./images/sprite.svg#icon-mob-menu-close"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu__list">
+            <li class="mob-menu__item">
+              <a href="./index.html" class="mob-menu__link">Студия</a>
+            </li>
+            <li class="mob-menu__item">
+              <a href="./portfolio.html" class="mob-menu__link mob-menu__link--active">Портфолио</a>
+            </li>
+            <li class="mob-menu__item">
+              <a href="" class="mob-menu__link">Контакты</a>
+            </li>
+          </ul>
+          <div class="mob-menu__contacts-wrap">
+            <ul class="mob-contacts">
+              <li class="mob-contacts__item">
+                <a href="tel:+380961111111" class="mob-contacts__link-tel">+38 096 111 11 11 </a>
+              </li>
+              <li class="mob-contacts__item">
+                <a href="mailto:info@devstudio.com" class="mob-contacts__link-mail"
+                  >info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mob-menu__social">
+              <li class="mob-menu__social-item">
+                <a class="mob-menu__social-link" href="">Instagram</a>
+              </li>
+              <li class="mob-menu__social-item">
+                <a class="mob-menu__social-link" href="">Twitter</a>
+              </li>
+              <li class="mob-menu__social-item">
+                <a class="mob-menu__social-link" href="">Facebook</a>
+              </li>
+              <li class="mob-menu__social-item">
+                <a class="mob-menu__social-link" href="">LinkedIn</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -519,32 +510,32 @@
           <h3 class="join__title">присоединяйтесь</h3>
           <ul class="join__list">
             <li class="social__item">
-              <button type="button" class="social__button social__button--join">
+              <a class="social__link social__link--join">
                 <svg class="social__icon">
                   <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg>
-              </button>
+              </a>
             </li>
             <li class="social__item">
-              <button type="button" class="social__button social__button--join">
+              <a class="social__link social__link--join">
                 <svg class="social__icon">
                   <use href="./images/sprite.svg#icon-twitter"></use>
                 </svg>
-              </button>
+              </a>
             </li>
             <li class="social__item">
-              <button type="button" class="social__button social__button--join">
+              <a class="social__link social__link--join">
                 <svg class="social__icon">
                   <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg>
-              </button>
+              </a>
             </li>
             <li class="social__item">
-              <button type="button" class="social__button social__button--join">
+              <a class="social__link social__link--join">
                 <svg class="social__icon">
                   <use href="./images/sprite.svg#icon-linkedin"></use>
                 </svg>
-              </button>
+              </a>
             </li>
           </ul>
         </div>
